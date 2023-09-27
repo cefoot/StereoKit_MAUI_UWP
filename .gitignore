@@ -32,6 +32,7 @@ bld/
 [Ll]ogs/
 OUTPUT_Android/
 OUTPUT_Win/
+OUTPUT_Holo/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/

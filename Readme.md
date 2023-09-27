@@ -25,4 +25,4 @@ Use the following powershel command to create base64 from the certificate file.
 ## UWP (ARM64 for HoloLens 2)
 **Hint:** *Certificate.pfx needs to be created before*
 
-`msbuild .\Platforms\StereoKit_UWP\StereoKit_UWP.csproj /p:Platform=ARM64 /p:AppxBundle=Always /p:AppxBundlePlatforms="ARM64" /p:PackageCertificateKeyFile=Certificate.pfx /restore`
+`msbuild .\Platforms\StereoKit_UWP\StereoKit_UWP.csproj /p:Platform=ARM64 /p:AppxBundle=Always /p:AppxBundlePlatforms="ARM64" /p:PackageCertificateKeyFile=Certificate.pfx /p:AppxPackageDir=../../OUTPUT_Holo /restore`
