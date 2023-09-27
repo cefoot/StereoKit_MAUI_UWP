@@ -10,7 +10,7 @@ namespace StereoKitApp
     {
         public SKSettings Settings => new SKSettings
         {
-            appName = "BASTA Demo",
+            appName = "Demo",
             assetsFolder = "Assets",
             displayPreference = DisplayMode.MixedReality
         };
