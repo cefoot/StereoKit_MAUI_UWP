@@ -5,6 +5,8 @@ Included is a small sample game.
 
 # Github Actions
 Everytime a Release (&Tag) is created there is an action included which automatically generates *UWP(Arm64)*, *Android* and *Standalone* zip files. To be executed on supporting devices (Quest, HoloLens 2, Windows-PC) 
+## Github Token
+To give github action access to the releases (to add the binaries) you need to configure the access to the repository. See [Token-Settings](https://github.com/settings/tokens?type=beta) for details.
 ## Github Secrets
 You need a Github Secrets for the UWP (HoloLens) Build to work.
 ## CERT
