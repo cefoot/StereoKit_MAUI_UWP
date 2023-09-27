@@ -6,11 +6,11 @@ Included is a small sample game.
 # Github Actions
 Everytime a Release (&Tag) is created there is an action included which automatically generates *UWP(Arm64)*, *Android* and *Standalone* zip files. To be executed on supporting devices (Quest, HoloLens 2, Windows-PC) 
 ## Github Token
-To give github action access to the releases (to add the binaries) you need to configure the access to the repository. See [Token-Settings](https://github.com/settings/tokens?type=beta) for details.
+To give github action access to the releases (to add the binaries) you need to configure Read & Write access for the GITHUB_TOKEN to the repository. See `Github>{Repository}>Settings>Actions>General>Workflow permissions` details.
 ## Github Secrets
 You need a Github Secrets for the UWP (HoloLens) Build to work.
 ## CERT
-Under Github>{Repository}>Settings>Secrets and variables>Actions you need to create "New repository secret" with name `CERT` and value should be the base64 of the UWP (PFX) certificate, used to sign the uwp app.
+Under `Github>{Repository}>Settings>Secrets and variables>Actions` you need to create "New repository secret" with name `CERT` and value should be the base64 of the UWP (PFX) certificate, used to sign the uwp app.
 
 Microsoft has [documentation](https://learn.microsoft.com/en-gb/windows/msix/package/create-certificate-package-signing) on how to create a certificate for signing.
 
